@@ -5,15 +5,14 @@ import React, { useEffect, useState } from "react";
 import {
 	HomeIcon,
 	BoxIcon,
-	UserIcon,
 	XIcon,
 	MenuIcon,
 	UserCog,
 	File,
-	LogIn,
 	UserCircle,
 	LogOutIcon,
 	UserPlus,
+	Users,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -33,7 +32,7 @@ export default function NavBar() {
 
 	const menuItems = [
 		{ name: "Home", icon: HomeIcon, url: "/" },
-		{ name: "Users", icon: UserIcon, url: "/users" },
+		{ name: "Users", icon: Users, url: "/users" },
 		{ name: "Products", icon: BoxIcon, url: "/products" },
 		{ name: "File Upload", icon: File, url: "/file_upload" },
 		// { name: "Admin", icon: UserCog, url: '/admin' },
